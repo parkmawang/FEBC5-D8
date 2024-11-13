@@ -19,7 +19,15 @@
     <button onclick="addElement()">Add Element</button>
     <div id="results"></div>
     <div id="results">
-        
+      <script>
+        function addElement() {
+          let newElement = document.createElement("p");
+          newElement.innerHTML = "Hello World";
+          let result = document.getElementById("results");
+          result.appendChild(newElement);
+        }
+      </script>
+  
         
     </div>
     <script src="script.js"></script>
